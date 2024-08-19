@@ -12,7 +12,7 @@ const mongoose = require("mongoose");
 const { MONGO_URL } = require("./env");
 
 const app = express();
-const PORT = 5000;
+const PORT = 8080;
 
 mongoose.connect(MONGO_URL).then(() => {
     console.log("MongoDB Connected");
