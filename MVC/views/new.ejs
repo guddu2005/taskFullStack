@@ -1,0 +1,192 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Task</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ffecd2, #fcb69f);
+            transition: background 1s ease-in-out;
+            height: 100vh;
+            align-items: center;
+            margin: 0;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        form {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        form:hover {
+            transform: scale(0.9);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        input[type="text"] {
+            width: 97%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus {
+            border-color: #ff7f50;
+            outline: none;
+        }
+
+        button {
+            background-color: #ff7f50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ff6347;
+            transform: scale(1.1);
+        }
+
+         button a {
+            text-decoration: none;
+            color: black;
+            height: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Add Task</h1>
+    <button><a href="/task">Back To Tasks</a></button>
+    <form action="/task" method="post">
+        <label for="task">Add Task</label>
+        <input type="text" name="title" placeholder="Enter task">
+        <label for="description">Enter Description:</label>
+        <input type="text" name="description" placeholder="Add Description">
+        <button type="submit">Add</button>
+    </form>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Task</title>
+    <style>
+        /* Apply general styling to the body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Style the main container */
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-top: 20px;
+        }
+
+        /* Style the button */
+        button {
+            background-color: #1d9d32;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 0;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        /* Style the link inside the button */
+        button a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Style the form */
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Style form labels */
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        /* Style form inputs */
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        /* Style the submit button */
+        button[type="submit"] {
+            background-color: #28a745;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #217c88;
+        }
+    </style>
+</head>
+<body>
+    <h1>Add Task</h1>
+    <form action="/task" method="post">
+        <button><a href="/task">Back To Tasks</a></button>
+        <label for="task">Add Task</label>
+        <input type="text" name="title" placeholder="Enter task">
+        <label for="description">Enter Description:</label>
+        <input type="text" name="description" placeholder="Add Description">
+        <button type="submit">Add</button>
+    </form>
+</body>
+</html>

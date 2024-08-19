@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Task Manager: Case Study</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+
+    header {
+      background-color: #fff;
+      padding: 20px;
+      border-bottom: 1px solid #e2e2e2;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    header nav {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .content {
+      padding: 40px 20px;
+    }
+    .pricing-plans {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .plan {
+      background-color: #fff;
+      border: 1px solid #e2e2e2;
+      padding: 20px;
+      flex: 1;
+      margin-right: 10px;
+    }
+
+    .plan:last-child {
+      margin-right: 0;
+    }
+
+    .plan h3 {
+      margin-top: 0;
+      font-size: 24px;
+      color: #333;
+    }
+
+    .plan ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+    }
+
+    .plan ul li {
+      margin-bottom: 10px;
+      color: #666;
+    }
+    a{
+        color: white;
+        
+         text-decoration: none;
+    }
+    .plan button {
+      color: white;
+      background-color: #333;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .plan button:hover {
+      background-color: #555;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/task/new">Write</a></li>
+        <li><a href="/signup">Sign up</a></li>
+        <li><a href="/login">Sign in</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="content">
+    <h1 class="case-study-title">Daily Task Manager</h1>
+   
+
+   
+
+    <div class="pricing-plans">
+      <div class="plan">
+        <h3>Free</h3>
+        <ul>
+          <li>Distraction-free reading. No ads.</li>
+          <li>Organize your knowledge with lists and highlights.</li>
+          <li>Add you Task Complete your Task</li>
+        </ul>
+        <button><a href="/signup">Sign up </a></button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
