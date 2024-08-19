@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <style>
@@ -93,5 +93,136 @@
 
       <button type="submit">Signup</button>
     </form>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #0c1c38;
+        margin: 0;
+        padding: 0;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: url('https://wallpaperset.com/w/full/c/9/0/522708.jpg') no-repeat center center;
+        background-size: cover;
+      }
+
+      .signin-container {
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 30px;
+        border-radius: 10px;
+        width: 300px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        text-align: center;
+      }
+
+      .signin-container h1 {
+        margin-bottom: 20px;
+        color: black;
+        font-size: 1.5em;
+      }
+
+      .signin-container label {
+        display: block;
+        margin-bottom: 5px;
+        color: black;
+        text-align: left;
+      }
+
+      .signin-container input[type="text"],
+      .signin-container input[type="email"],
+      .signin-container input[type="password"] {
+        width: 92%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.2);
+        color: black;
+        outline: none;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .signin-container input[type="text"]:focus,
+      .signin-container input[type="email"]:focus,
+      .signin-container input[type="password"]:focus {
+        border-color: #1abc9c;
+        box-shadow: 0 0 5px rgba(26, 188, 156, 0.5);
+        background-color: rgba(255, 255, 255, 0.3);
+      }
+
+      .signin-container button {
+        width: 100%;
+        padding: 10px;
+        background-color: #1abc9c;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+      }
+
+      .signin-container button:hover {
+        background-color: #16a085;
+      }
+
+      .signin-container a {
+        text-decoration: none;
+        font-size: 0.9em;
+      }
+
+      .signin-container a:hover {
+        text-decoration: underline;
+      }
+
+      .signin-container .remember-forgot {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+  </head>
+  <body>
+    <div class="signin-container">
+      <h1>Sign In</h1>
+      <% if(locals.error) %>
+      <div>
+        <%= locals.error %>
+      </div>
+      <% if(locals.err) %>
+      <div>
+        <%= locals.err %>
+      </div>
+  
+      <form action="/user" method="post">
+        <label>Full Name</label>
+        <input type="text" required name="name" />
+        <label for="email">Email Id:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+
+        <div class="remember-forgot">
+          <a href="/login">Already have an account?</a>
+        </div>
+
+        <button type="submit">Sign In</button>
+      </form>
+    </div>
   </body>
 </html>

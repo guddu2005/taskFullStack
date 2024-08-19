@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <style>
@@ -86,4 +86,130 @@
       <button type="submit">Login</button>
     </form>
   </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0c1c38;
+      margin: 0;
+      padding: 0;
+      padding-top: 30px;
+      padding-bottom: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: url('https://th.bing.com/th/id/OIP.qDvAlhidTBzXiGyDfq_O0gHaE7?rs=1&pid=ImgDetMain') no-repeat center center;
+      background-size: cover;
+
+    }
+
+    .login-container {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 10px;
+      width: 300px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      text-align: center;
+
+    }
+
+    .login-container h1 {
+      margin-bottom: 20px;
+      color: black;
+      font-size: 1.5em;
+    }
+
+    .login-container label {
+      display: block;
+      margin-bottom: 5px;
+      color: black;
+      text-align: left;
+    }
+
+    .login-container input[type="email"],
+    .login-container input[type="password"] {
+      width: 92%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.2);
+  
+
+    }
+
+    .login-container input[type="checkbox"] {
+      margin-bottom: 20px;
+      color: #fff;
+    }
+
+    .login-container button {
+      width: 100%;
+      padding: 10px;
+      background-color: #1abc9c;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+
+    .login-container button:hover {
+      background-color: #16a085;
+    }
+
+    .login-container a {
+      color: blue;
+      text-decoration: none;
+      font-size: 0.9em;
+    }
+
+    .login-container a:hover {
+      text-decoration: underline;
+    }
+
+    .login-container .remember-forgot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      
+    }
+  </style>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+</head>
+
+<body>
+  <div class="login-container">
+    <h1>Customer Login</h1>
+    <form action="/user/login" method="post">
+      <label for="email">Email ID</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required />
+
+      <div class="remember-forgot">
+        <label>
+          <input type="checkbox" name="remember" /> Remember me
+        </label>
+        <a href="/signup">Don't have an account?</a>
+      </div>
+
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</body>
+
 </html>
