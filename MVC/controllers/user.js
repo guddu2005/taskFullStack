@@ -1,5 +1,5 @@
 const { v4: uuidv4 } = require("uuid");
-const { User } = require("../models/User"); // Ensure this path is correct
+const { User } = require("../models/user"); // Ensure this path is correct
 const bcrypt = require('bcrypt');
 const { setUser } = require("../service/auth");
 
