@@ -41,7 +41,13 @@ const handleUserLogin = async (req, res) => {
 
 }
 
+const handleLogOut=(req, res)=>{
+    res.clearCookie("gid");
+    return res.redirect("/");
+}
+
 module.exports = {
     handleUserLogin,
     handleUserSignUp,
+    handleLogOut
 };

@@ -12,5 +12,8 @@ staticRouter.get("/signup", (req, res) => {
 staticRouter.get("/login", (req, res) => {
     return res.render("login");
 });
+// staticRouter.get("/logout" ,(req, res)=>{
+    // return res.redirect("/");
+// })
 
 module.exports = staticRouter;

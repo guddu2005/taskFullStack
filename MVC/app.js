@@ -12,7 +12,7 @@ const mongoose = require("mongoose");
 const { MONGO_URL } = require("./env");
 
 const app = express();
-const PORT = 8080;
+const PORT = 8000;
 
 mongoose.connect(MONGO_URL).then(() => {
     console.log("MongoDB Connected");
@@ -27,13 +27,7 @@ app.use(methodOverride('_method'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(cors(
-    {
-        origin:["https://deploy-taskapp.vercel.app"],
-        methods:["POST" ,"GET"],
-        credentials:true
-    }
-));
+app.use(cors());
 
 app.use("/task",restrictToLoggedUserOnly, taskRouter);
 app.use("/user", userRouter);
